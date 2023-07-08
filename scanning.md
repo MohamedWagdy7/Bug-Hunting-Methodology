@@ -6,5 +6,7 @@
 3. SSTI
 4. SQLi
 5. CMDi
-# Test for sensitive data exposure
+# Test for JS Files
 1. run `secretfinder -i http://example.com`
+# Test Technologies
+1. for each technology search in `NVD`, `exploit-db`, etc for exploitation.
