@@ -20,8 +20,9 @@
 - [ ] [Bug Hunter Helper](https://dorks.faisalahmed.me/)
 - [ ] `intext:”index of /.git example.com`
 # Parameters Enumeration
-> That is like a tip, you can skip
-- [ ] `ffuf -w 
+> That is like a tip, do it when you need
+- [ ] `ffuf -w SecLists/Discovery/Web-Content/BurpSuite-ParamMiner/lowercase-headers -u http://example.com/?FUZZ=random`
+- [ ] `ffuf -x POST -w SecLists/Discovery/Web-Content/BurpSuite-ParamMiner/lowercase-headers -d "FUZZ=random" -u example.com`
 - [ ] as you run `linkfinder` in dirs enum phase, it will get you parameters from the JS too
 # Technologies Enumeration
 - [ ] `wappalyzer`
