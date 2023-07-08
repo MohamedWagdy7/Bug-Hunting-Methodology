@@ -20,6 +20,8 @@
 - [ ] [Bug Hunter Helper](https://dorks.faisalahmed.me/)
 - [ ] `intext:”index of /.git example.com`
 # Parameters Enumeration
+> That is like a tip, you can skip
+- [ ] `ffuf -w 
 - [ ] as you run `linkfinder` in dirs enum phase, it will get you parameters from the JS too
 # Technologies Enumeration
 - [ ] `wappalyzer`
