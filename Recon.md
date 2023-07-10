@@ -10,7 +10,6 @@
 # File extensions Enumeration
 - [ ] `ffuf -w Pntest/SecLists/Discovery/Web-Content/web-extensions.txt -u http://example.com/indexFUZZ`
 # Directories Enumeration
-- [ ] `ffuf -ac -v -u "https://example.com/FUZZ" -w SecLists/Discovery/Web-Content/raft-small-directories.txt`
 - [ ] `ffuf -ac -v -u "https://exampke.com/FUZZ" -w SecLists/Discovery/Web-Content/raft-small-files.txt`
 - [ ] `ffuf -w SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://example.com/FUZZ --recursion --recursion-depth 1 -e <enumerated_extensions>,db,txt,md5`
 - [ ] run linkfinder `linkfinder -i https://example.com -d`
