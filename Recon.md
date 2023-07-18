@@ -2,6 +2,7 @@
 - [ ] run amass `amass enum -brute -active -d example.com -o amass-output.txt`
 - [ ] run subdomain fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://FUZZ.example.com`
 - [ ] run VHost fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://example.com/ -H 'Host: FUZZ.example.com'`
+- [ ] knock.py <domain>
 # IPs Enumeration
 - [ ] run sub-resolver `sub-resolver <subdomains_files>`
 - [ ] ASNLookup
