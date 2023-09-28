@@ -43,3 +43,5 @@
 # Testing
 ## Subdomain Takeover
 - [ ] `subjack -w subdomains.txt`
+## Broken URLs
+- [ ] `socialhunter -f urls.txt`
