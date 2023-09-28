@@ -45,3 +45,6 @@
 - [ ] `subjack -w subdomains.txt`
 ## Broken URLs
 - [ ] `socialhunter -f urls.txt`
+## JS files
+### information Disclosure
+- [ ] run `secretfinder -i http://example.com`
