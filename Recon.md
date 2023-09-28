@@ -42,3 +42,4 @@
 - [ ] `Built With`
 # Testing
 ## Subdomain Takeover
+- [ ] `subjack -w subdomains.txt`
