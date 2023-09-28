@@ -40,3 +40,5 @@
 - [ ] `wappalyzer`
 - [ ] `shodan`
 - [ ] `Built With`
+# Testing
+## Subdomain Takeover
