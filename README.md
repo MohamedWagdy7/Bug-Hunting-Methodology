@@ -8,6 +8,7 @@
 - [ ] `knock.py <domain>`
 - [ ] to extract subdomains from `amass.txt` --> `sub-extractor amass.txt`
 - [ ] to filter active subdomains run `active-sub <subdomains_file>`
+- [ ] sudo nmap -Pn  -sn earlywarning.com --script=hostmap-crtsh.nse
 ## screenshots
 - [ ] run eyewitness `eyewitness --web -d ./screens -f subdomains.txt`
 ## IPs Enumeration
