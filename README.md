@@ -7,7 +7,7 @@
 - [ ] `finalrecon -r --wayback --dir --crawl <URL>`
 - [ ] `knock.py <domain>`
 - [ ] to extract subdomains from `amass.txt` --> `sub-extractor amass.txt`
-- [ ] to filter active subdomains run `active-sub <subdomains_file>`
+- [ ] to filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects`
 - [ ] sudo nmap -Pn  -sn earlywarning.com --script=hostmap-crtsh.nse
 ## screenshots
 - [ ] run eyewitness `eyewitness --web -d ./screens -f subdomains.txt`
