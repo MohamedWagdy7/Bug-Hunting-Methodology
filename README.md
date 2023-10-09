@@ -12,8 +12,7 @@
 - [ ] run eyewitness `eyewitness --web -d ./screens -f subdomains.txt`
 ## IPs Enumeration
 - [ ] extract IPs from amass.txt `cat amass.txt| grep -oP "([0-9]{1,3}\.){3}[0-9]{1,3}(\/(([0-9])+)?)?"`
-- [ ] run sub-resolver `sub-resolver <subdomains_files>`
-- [ ] ASNLookup
+- [ ] dig <hostname>
 > Tip: try to reverse DNS, may you find more subdomains <be>
 
 > At this point, you should deal with each subdomain as a separate scope: dig it, get its dirs, and search for each vulnerability you know.
