@@ -4,7 +4,6 @@
 - [ ] extract subdomains from subtrails
 - [ ] run subdomain fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://FUZZ.example.com`
 - [ ] run VHost fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://example.com/ -H 'Host: FUZZ.example.com'`
-- [ ] `finalrecon -r --wayback --dir --crawl <URL>`
 - [ ] `knock.py <domain>`
 - [ ] to extract subdomains from `amass.txt` --> `sub-extractor amass.txt`
 - [ ] to filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects`
