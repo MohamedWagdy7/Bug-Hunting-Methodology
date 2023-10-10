@@ -32,8 +32,7 @@
 - [ ] [Bug Hunter Helper](https://dorks.faisalahmed.me/)
 - [ ] `intext:” index of /.git example.com`
 ## Parameters Enumeration
-- [ ] `ffuf -w SecLists/Discovery/Web-Content/BurpSuite-ParamMiner/lowercase-headers -u http://example.com/?FUZZ=random`
-- [ ] `ffuf -x POST -w SecLists/Discovery/Web-Content/BurpSuite-ParamMiner/lowercase-headers -d "FUZZ=random" -u example.com`
+- [ ] `arjun -u <URL>`
 - [ ] `paramspider -d <subdomain>`
 ## Technologies Enumeration
 - [ ] `wappalyzer`
