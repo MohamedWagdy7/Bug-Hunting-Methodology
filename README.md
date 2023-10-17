@@ -16,6 +16,9 @@
 ## S3 Buckets Enumeration
 - [ ] `cloud_enum -k example -k example -k example.io`
 
+## Crawling
+- [ ] `hakrawler`
+
 ## NMAP Scan
 - [ ] `sudo nmap -Pn --script=vuln <IP> -p443,80`
 ## File extensions Enumeration
