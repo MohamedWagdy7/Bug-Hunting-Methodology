@@ -14,6 +14,8 @@
 ## S3 Buckets Enumeration
 - [ ] `cloud_enum -k example -k example -k example.io`
 
+## JS Enumeration
+- [ ] `cat subdomains | katana | grep js | httpx -mc 200 | tee js.txt`
 ## Crawling
 - [ ] `echo <URL> | hakrawler`
 - [ ] `echo <URL> | gau`
