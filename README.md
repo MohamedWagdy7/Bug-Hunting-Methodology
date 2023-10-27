@@ -4,9 +4,8 @@
 - [ ] extract subdomains from Security Trails
 - [ ] run subdomain fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://FUZZ.example.com`
 - [ ] run VHost fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://example.com/ -H 'Host: FUZZ.example.com'`
-- [ ] `knock.py <domain>`
 - [ ] to extract subdomains from `amass.txt` --> `sub-extractor amass.txt`
-- [ ] To filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects -p 443,80,8888,8080`
+- [ ] To filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
 - [ ] `sudo nmap -Pn  -sn example.com --script=hostmap-crtsh.nse`
 ## IPs Enumeration
 - [ ] extract IPs from amass.txt `cat amass.txt| grep -oP "([0-9]{1,3}\.){3}[0-9]{1,3}(\/(([0-9])+)?)?"`
