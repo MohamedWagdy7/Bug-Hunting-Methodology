@@ -17,6 +17,7 @@
 ## Crawling
 - [ ] `echo <URL> | hakrawler`
 - [ ] `echo <URL> | gau`
+- [ ] `katana -u <URL>`
 
 ## NMAP Scan
 - [ ] `sudo nmap -Pn --script=vuln <IP> -p443,80`
