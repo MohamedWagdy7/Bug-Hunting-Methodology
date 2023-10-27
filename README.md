@@ -15,7 +15,8 @@
 - [ ] `cloud_enum -k example -k example -k example.io`
 
 ## Crawling
-- [ ] `hakrawler`
+- [ ] `echo <URL> | hakrawler`
+- [ ] `echo <URL> | gau`
 
 ## NMAP Scan
 - [ ] `sudo nmap -Pn --script=vuln <IP> -p443,80`
