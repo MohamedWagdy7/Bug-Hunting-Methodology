@@ -47,4 +47,5 @@
 - [ ] `socialhunter -f urls.txt`
 ## JS files
 ### information Disclosure
-- [ ] run `secretfinder -i http://example.com`
+- [ ] `secretfinder -i http://example.com`
+- [ ] `nuclei -l js.txt -t ~/nuclei-templates/exposures/ -o js_bugs.txt`
