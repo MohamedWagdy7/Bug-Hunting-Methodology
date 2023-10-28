@@ -12,7 +12,7 @@
 
 ## S3 Buckets Enumeration
 - [ ] `cloud_enum -k example -k example -k example.io`
-- [ ] 
+ 
 ## Crawling
 - [ ] `echo <URL> | hakrawler >> urls&`
 - [ ] `echo <URL> | gau>>urls&`
