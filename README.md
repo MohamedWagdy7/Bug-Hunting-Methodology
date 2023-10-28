@@ -12,14 +12,13 @@
 
 ## S3 Buckets Enumeration
 - [ ] `cloud_enum -k example -k example -k example.io`
-
-## JS Enumeration
-- [ ] `cat subdomains | katana | grep js | httpx -mc 200 | tee js.txt`
+- [ ] `
 ## Crawling
-- [ ] `echo <URL> | hakrawler`
-- [ ] `echo <URL> | gau`
-- [ ] `katana -u <URL>`
-
+- [ ] `echo <URL> | hakrawler >> urls&`
+- [ ] `echo <URL> | gau>>urls&`
+- [ ] `katana -u <URL>>>urls&`
+## JS Enumeration
+- [ ] `cat urls.txt | grep js | httpx -mc 200 | tee js.txt
 ## NMAP Scan
 - [ ] `sudo nmap -Pn --script=vuln <IP> -p443,80`
 ## File extensions Enumeration
