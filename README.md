@@ -1,7 +1,6 @@
 # Recon
 ## Subdomain Enumeration
 - [ ] run amass `amass enum -d example.com > amass&`
-- [ ] extract subdomains from Security Trails
 - [ ] run subdomain fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://FUZZ.example.com`
 - [ ] run VHost fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://example.com/ -H 'Host: FUZZ.example.com'`
 - [ ] `cat subdomains | haktrails subdomains`
