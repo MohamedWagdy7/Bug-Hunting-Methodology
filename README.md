@@ -14,9 +14,9 @@
 - [ ] `cloud_enum -k example -k example -k example.io`
  
 ## Crawling
-- [ ] `echo <URL> | hakrawler >> urls&`
-- [ ] `echo <URL> | gau>>urls&`
-- [ ] `katana -u <URL>>>urls&`
+- [ ] `cat subdomains.txt | hakrawler >> urls&`
+- [ ] `cat subdomains.txt | gau >> urls&`
+- [ ] `cat subdomains.txt | katana >> urls&`
 ## JS Enumeration
 - [ ] `cat urls.txt | grep js | httpx -mc 200 | tee js.txt`
 ## NMAP Scan
