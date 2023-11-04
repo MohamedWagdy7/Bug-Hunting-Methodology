@@ -35,7 +35,7 @@
 - [ ] [Bug Hunter Helper](https://dorks.faisalahmed.me/)
 - [ ] `intext:” index of /.git example.com`
 ## Parameters Enumeration
-- [ ] `arjun -u <URL>`
+- [ ] `cat subdomains | httpx | arjun -i`
 - [ ] `paramspider -d <subdomain>`
 ## Technologies Enumeration
 - [ ] `wappalyzer`
