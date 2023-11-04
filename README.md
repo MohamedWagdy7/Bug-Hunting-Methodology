@@ -1,7 +1,7 @@
 # Recon
 ## Subdomain Enumeration
 - [ ] run amass `amass enum -d example.com > amass&`
-- [ ] run subdomain fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://FUZZ.example.com`
+- [ ] `amass enum -d {argv[1]} -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-100000.txt --passive --active >>subdomains 2>/dev/null`
 - [ ] run VHost fuzzing `ffuf -w SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u http://example.com/ -H 'Host: FUZZ.example.com'`
 - [ ] `cat subdomains | haktrails subdomains`
 - [ ] To filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
