@@ -19,7 +19,7 @@
 - [ ] `cat subdomains | gau >> urls&`
 - [ ] `cat subdomains | katana >> urls&`
 ## JS Enumeration
-- [ ] `cat urls.txt | grep js | httpx -mc 200 | tee js.txt`
+- [ ] `cat urls | grep js | httpx -mc 200 | tee js`
 ## NMAP Scan
 - [ ] `sudo nmap -Pn --script=vuln <IP> -p443,80`
 ## File extensions Enumeration
@@ -43,10 +43,10 @@
 - [ ] `Built With`
 # Testing
 ## Subdomain Takeover
-- [ ] `subjack -w subdomains.txt`
+- [ ] `subjack -w subdomains`
 ## Broken URLs
-- [ ] `socialhunter -f urls.txt`
+- [ ] `socialhunter -f urls`
 ## JS files
 ### information Disclosure
 - [ ] `secretfinder -i http://example.com`
-- [ ] `nuclei -l js.txt -t ~/nuclei-templates/exposures/ -o js_bugs.txt`
+- [ ] `nuclei -l js -t ~/nuclei-templates/exposures/ -o js_bugs`
