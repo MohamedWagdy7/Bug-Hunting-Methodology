@@ -1,8 +1,8 @@
 # Recon
 ## Subdomain Enumeration
 - [ ] `amass enum -active -pasive -brute -d example.com -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-100000.txt >>subdomains`
-- [ ] `gobuster vhost -u http://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' >> subdomains && rm x `
-- [ ] `gobuster vhost -u https://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' >> subdomains && rm x`
+- [ ] `gobuster vhost -u http://example.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.example.com/' >> subdomains && rm x `
+- [ ] `gobuster vhost -u https://example.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.example.com/' >> subdomains && rm x`
 - [ ] `sort subdomains | uniq >> x && rm subdomains && mv x subdomains`
 - [ ] `cat subdomains | haktrails subdomains >> subdomains`
 - [ ] To filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
@@ -25,7 +25,7 @@
 ## File extensions Enumeration
 - [ ] `ffuf -w Pntest/SecLists/Discovery/Web-Content/web-extensions.txt -u http://example.com/indexFUZZ`
 ## Directories Enumeration
-- [ ] `dirsearch -u http://dashboard.hiltonmanage.com`
+- [ ] `dirsearch -u http://example.com`
 - [ ] `ffuf -ac -v -u "https://exampke.com/FUZZ" -w SecLists/Discovery/Web-Content/raft-small-files.txt`
 - [ ] `ffuf -w SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://example.com/FUZZ --recursion --recursion-depth 1 -e <enumerated_extensions>,db,txt,md5`
 - [ ] run linkfinder `linkfinder -i https://example.com -d`
