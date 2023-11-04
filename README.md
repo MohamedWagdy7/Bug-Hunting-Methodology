@@ -1,8 +1,8 @@
 # Recon
 ## Subdomain Enumeration
 - [ ] `amass enum -active -pasive -brute -d example.com -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-100000.txt >>subdomains`
-- [ ] `gobuster vhost -u http://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' && rm x >> subdomains`
-- [ ] `gobuster vhost -u https://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' && rm x >> subdomains`
+- [ ] `gobuster vhost -u http://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' >> subdomains && rm x `
+- [ ] `gobuster vhost -u https://wurl.com -q -w ~/Pentest/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.wurl.com/' >> subdomains && rm x`
 - [ ] `sort subdomains | uniq >> x && rm subdomains && mv x subdomains`
 - [ ] `cat subdomains | haktrails subdomains >> subdomains`
 - [ ] To filter active subdomains run `httpx -l subdomains.txt -o activesubs.txt -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
