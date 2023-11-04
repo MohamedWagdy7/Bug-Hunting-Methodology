@@ -16,7 +16,7 @@
  
 ## Crawling
 - [ ] `cat subdomains | httpx | hakrawler >> urls&`
-- [ ] `cat subdomains | gau >> urls&`
+- [ ] `cat subdomains | httpx | gau >> urls&`
 - [ ] `cat subdomains | httpx | katana >> urls&`
 ## JS Enumeration
 - [ ] `cat urls | grep js | httpx -mc 200 | tee js`
