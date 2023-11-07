@@ -36,7 +36,7 @@
 - [ ] `intext:” index of /.git example.com`
 ## Parameters Enumeration
 - [ ] `cat subdomains | httpx | arjun -i`
-- [ ] `paramspider -d <subdomain>`
+- [ ] `paramspider -l <subdomains>`
 ## Technologies Enumeration
 - [ ] `wappalyzer`
 - [ ] `shodan`
