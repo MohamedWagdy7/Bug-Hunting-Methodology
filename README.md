@@ -19,6 +19,7 @@
 - [ ] `cat subdomains | httpx | gau >> urls&`
 - [ ] `cat subdomains | httpx | katana >> urls&`
 - [ ] `cat subdomains | waybackurls >> urls&`
+- [ ] `gospider -S subdomains -t 10 -d 1 -c 10 | grep -o -E "(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&\/\?\:@\+-\_=#%;,])*" | sort -u |uniq >>urls&`
 ## JS Enumeration
 - [ ] `cat urls | grep js | httpx -mc 200 | tee js`
 ## NMAP Scan
