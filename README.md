@@ -49,6 +49,6 @@
 ## Broken URLs
 - [ ] `socialhunter -f urls`
 ## JS files
-### information Disclosure
-- [ ] `secretfinder -i http://example.com`
 - [ ] `nuclei -l js -t ~/nuclei-templates/exposures/ -o js_bugs`
+## SQL injection
+- [ ] `cat URLs |uro | grep "\?" | sed "s/=.*/=A\'/" | uniq > params.txt; cat params.txt | httpx -mr ".*SQL.*|.*syntax.*|.*error.*"`
