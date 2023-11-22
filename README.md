@@ -7,8 +7,10 @@
 - [ ] `cat subdomains | haktrails subdomains >> subdomains`
 - [ ] To filter active subdomains run `httpx -l subdomains -o activesubs -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
 ## IPs Enumeration
-- [ ] extract IPs from amass.txt `cat amass.txt| grep -oP "([0-9]{1,3}\.){3}[0-9]{1,3}(\/(([0-9])+)?)?"`
 - [ ] dig <hostname>
+- [ ] shodan.io
+- [ ] censys.io
+- [ ] en.fofa.info
 > Tip: try to reverse DNS, may you find more subdomains <be>
 
 ## S3 Buckets Enumeration
@@ -19,7 +21,6 @@
 - [ ] `cat subdomains | httpx | gau >> urls&`
 - [ ] `cat subdomains | httpx | katana >> urls&`
 - [ ] `cat subdomains | waybackurls >> urls&`
-- [ ] `gospider -S subdomains -t 10 -d 1 -c 10 | grep -o -E "(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&\/\?\:@\+-\_=#%;,])*" | sort -u |uniq >>urls&`
 ## JS Enumeration
 - [ ] `cat urls | grep js | httpx -mc 200 | tee js`
 ## NMAP Scan
