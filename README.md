@@ -11,7 +11,9 @@
 - [ ] shodan.io
 - [ ] censys.io
 - [ ] en.fofa.info
+
 > Tip: try to reverse DNS, may you find more subdomains <be>
+- [ ] `prips CIDR | hakip2host` 
 
 ## S3 Buckets Enumeration
 - [ ] `cloud_enum -k example -k example -k example.io`
