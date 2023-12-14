@@ -9,8 +9,7 @@
 ## IPs Enumeration
 - [ ] dig <hostname>
 - [ ] shodan.io
-
-      - `ssl.cert.serial: xxxxxxxxxxxxxxxxxxxx`
+      ssl.cert.serial: xxxxxxxxxxxxxxxxxxxx
 - [ ] censys.io
 - [ ] en.fofa.info
 
