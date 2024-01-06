@@ -52,7 +52,7 @@
 - [ ] `Built With`
 # Testing
 ## Subdomain Takeover
-- [ ] `subjack -w subdomains`
+- [ ] `subzy run --targets subdomains --hide_fails`
 ## Broken URLs
 - [ ] `socialhunter -f urls`
 ## JS files
