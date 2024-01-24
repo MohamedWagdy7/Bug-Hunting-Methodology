@@ -20,7 +20,6 @@
 - [ ] `cloud_enum -k example -k example -k example.io`
  
 ## Crawling
-- [ ] `cat subdomains | httpx | hakrawler >> urls&`
 - [ ] `cat subdomains | httpx | gau >> urls&`
 - [ ] `cat subdomains | httpx | katana >> urls&`
 - [ ] `cat subdomains | waybackurls >> urls&`
