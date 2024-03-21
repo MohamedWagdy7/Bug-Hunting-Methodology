@@ -7,8 +7,7 @@
 - [ ] `amass enum -active -passive -brute -d example.com -w ~/SecLists/Discovery/DNS/subdomains-top1million-110000.txt >>subdomains`
 - [ ] `gobuster vhost -u http://example.com -q -w ~/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.example.com/' >> subdomains && rm x `
 - [ ] `gobuster vhost -u https://example.com -q -w ~/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.example.com/' >> subdomains && rm x`
-- [ ] `sort -u subdomains >> x && rm subdomains && mv x subdomains`
-- [ ] `cat subdomains | haktrails subdomains >> subdomains`
+- [ ] Reverse WHOIS search
 - [ ] To filter active subdomains run `httpx -l subdomains -o activesubs -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443`
 ## IPs Enumeration
 - [ ] dig <hostname>
