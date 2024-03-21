@@ -1,4 +1,7 @@
 # Recon
+## Acquisitions
+- [ ] Crunchbase
+- [ ] tracxn.com
 ## Subdomain Enumeration
 - [ ] `amass enum -active -passive -brute -d example.com -w ~/SecLists/Discovery/DNS/subdomains-top1million-110000.txt >>subdomains`
 - [ ] `gobuster vhost -u http://example.com -q -w ~/SecLists/Discovery/DNS/subdomains-top1million-110000.txt | grep -v 403 >> x && cat x | cut -d ' ' -f 2 | sed 's/$/.example.com/' >> subdomains && rm x `
